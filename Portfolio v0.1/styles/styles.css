@@ -1,0 +1,365 @@
+body{
+    font-family: "Poppins";
+    margin: 0;
+    min-height: 500vh;
+}
+button {
+    font-family: "Poppins";
+    font-weight: 700;
+    transition-duration: 300ms;
+    /* transition:background color ease-in; */
+}
+header {
+    min-height: 100vh;
+    background-color: #0C1B24;
+}
+section {
+    min-height:100vh;
+}
+main {
+    height:80vh;
+    width: 80%;
+    margin: auto;
+    border: 3px solid red;
+}
+
+/* secondary NavBar  */
+
+
+.sub-nav-bg {
+    min-height: 5%;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+.sub-nav-container {
+    background-color: rgba(25, 50, 66, 0.3);
+}
+.sub-logo {
+    width:3%;
+    position: relative;
+    z-index: 1;
+}
+.sub-icon {
+    width: 70%;
+}
+ .title-tag h1 {
+    margin:0;
+    margin-top: 0.5%;
+    position: relative;
+    text-align: center;
+    color:#fff;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+/* End of secondary NavBar  */
+
+
+
+/* NavBar */
+
+.styled, .description-btns button{
+    text-transform:capitalize;
+    border: 0;
+    line-height: 1.4;
+    padding: 0 0.55rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    border-radius: 15px;
+    background-color: #FF4D4D;   
+}
+.nav-item button:hover{
+    color: #ff4d4d;
+    background-color: #191B37;
+}
+
+
+
+
+.nav-icons {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 8.5%;
+}
+.icon {
+    width: 95%;
+}
+
+.navbar ul li, a {
+    display:inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;;
+    text-transform: capitalize;
+}
+
+.nav-container {
+    background-color: #191B37;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar{
+    width: 80%;
+    margin:auto;
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+
+.nav-item {
+    padding: 0 1.2rem;
+}
+.nav-item a {
+    width: 7rem;
+    background: rgba(25, 50, 66, 0.3);
+    text-align: center;
+    border-radius: 20px;
+    transition-duration: 300ms;
+}
+.nav-item a:hover {
+    background: rgba(30, 61, 80, 0.6);
+}
+.nav-item a:active {
+    background: rgb(34, 68, 88);
+}
+
+.nav-icon {
+    padding: 0 0.1rem;
+}
+.nav-icon a{
+    opacity: 0.65;
+    text-align: center;
+    transition-duration: 300ms;
+}
+.nav-icon a:hover{
+    opacity: 2;
+}
+/* End of navbar */
+
+
+/* hero */
+
+
+.hero-img {
+    position:absolute;
+    height: 82%;
+    width: 50%;
+    bottom: 0%;
+    z-index: 0;
+}
+
+.hero-container {
+    /* border:1px solid yellow; */
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    width: 80%;
+    margin:6% auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 1.2;
+}
+.left {
+    padding-left: 6rem;
+    line-height:10;
+}
+.right{
+    padding-right: 3rem;
+    line-height:10;
+}
+.left h3, .right h3 {
+    text-transform: uppercase;
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height:3;
+
+}
+.left h1, .right h1 {
+    text-transform: capitalize;
+    font-size: 6em;
+    font-weight: 900;
+    line-height:1.5;
+}
+
+
+.hero-btn{
+    border: 0;
+    height: 3rem;
+    width: 10.8rem;
+    line-height: 1.4;
+    padding: 0.6 0.6rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    color: #000;
+    border-radius: 20px;
+    background-color: #FF4D4D;   
+}
+.hero-btn:hover {
+    color: #ff4d4d;
+    background-color: #0C1B24;
+    cursor: pointer;
+}
+.more:hover {
+    background-color: #193242;
+}
+
+
+
+/* section 1*/
+/* Vector 4 */
+.main-sec {
+    position:relative;
+    border:none;
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.title h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.title, .mini-box-img .title h1{
+    width:100%;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+    position: absolute;
+    margin-top: 0.7rem;
+    z-index: 2;
+}
+.box-img {
+    width:100%;
+    align-items: center;
+    border-radius: 3.571rem;
+    background-color: rgba(218, 218, 218, 0.575); 
+    min-height:38.125rem;
+    max-height:38.125rem;
+    margin: 0 4rem;
+    z-index: 0;
+    position: relative;
+}
+.box-img img, .mini-box-img img {
+    width:98.0%;
+    opacity: 0.9;
+}
+.box{
+    font-size: 1.01rem;
+    line-height: 2;
+    margin: 3rem;
+    text-align: justify;
+    margin-top: 0.3rem;
+}
+
+/* section 2 */
+
+.mini-box-img img {
+    position: relative;
+    width:103%;
+    right:1.85%;
+}
+#projects .main-sec {
+    margin-top: 1rem;
+} 
+
+.box-container .title h1 {
+    font-size: 1.06rem;
+    font-weight: 700;
+    margin: 0;
+    font-size: 0.9rem;
+}
+.mini-box {
+    font-size: 1.01rem;
+    line-height: 1;
+    margin: 0;
+    padding: 6rem 0;
+    text-align: center;
+}
+.mini-box-img{
+
+    min-width:56.665%;
+    align-items: center;
+    border-radius: 2.171rem;
+    background-color: aqua;
+    min-height:20.85rem;
+    max-height:20.85rem;
+    margin-right: 0.5rem;
+
+
+    z-index: 0;
+    position: relative;
+}
+
+.box-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mini-box-img .title{
+margin-top: 0.5rem;
+}
+
+.full-card {
+    display: flex;
+
+    margin: 1.5rem 4rem;
+}
+.description {
+    position: relative;
+    text-align: justify;
+    /* background-color: cadetblue; */
+    margin: 0.8rem 0 ;
+    min-width: 50%;
+    max-width: 14rem;
+    height: 19rem;
+}
+.text{
+    font-style: normal;
+    font-size: 1rem;
+    font-weight:300;
+    line-height: 1.15;
+    text-align: left;
+}
+
+.description-btns {
+    position: relative;
+    text-align: center;
+    bottom: 1;
+    width:100%;
+
+}
+.description-btns button{
+    width: 4rem;
+    margin: 0 1rem;
+
+}
+
+.description-btns button:hover{
+    background-color: #fff;
+    color: #FF4D4D;
+}
+
+
+@media (max-width: 1400px) { 
+    .nav-item {
+        padding: 0 0.5rem;
+    } 
+    .navbar {
+        width: 85%;
+    }
+    
+}
