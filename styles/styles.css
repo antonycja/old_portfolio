@@ -2,6 +2,7 @@ body{
     font-family: "Poppins";
     margin: 0;
     min-height: 500vh;
+    background-color: #EAEAEA
 }
 button {
     font-family: "Poppins";
@@ -20,8 +21,9 @@ main {
     height:80vh;
     width: 80%;
     margin: auto;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
+
 
 /* secondary NavBar  */
 
@@ -217,11 +219,10 @@ main {
 
 
 
-/* section 1*/
-/* Vector 4 */
+/* about me section*/
 .main-sec {
     position:relative;
-    border:none;
+    /* border:none; */
     /* border: 1px solid blue; */
     display: flex;
     align-items: center;
@@ -245,7 +246,7 @@ main {
     width:100%;
     align-items: center;
     border-radius: 3.571rem;
-    background-color: rgba(218, 218, 218, 0.575); 
+    background-color: rgba(25, 50, 66, 0.0095); 
     min-height:38.125rem;
     max-height:38.125rem;
     margin: 0 4rem;
@@ -263,9 +264,33 @@ main {
     text-align: justify;
     margin-top: 0.3rem;
 }
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.skill-list {
+    text-transform:uppercase;
+    font-size: .8rem;
+    text-align: center;
+}
+.skill-list span {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: .2em .5em;
+}
+.about-me .iconify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: .8em;
+}
 
-/* section 2 */
 
+/* Projects section*/
 .mini-box-img img {
     position: relative;
     width:103%;
@@ -279,7 +304,7 @@ main {
     font-size: 1.06rem;
     font-weight: 700;
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 .mini-box {
     font-size: 1.01rem;
@@ -291,6 +316,7 @@ main {
 .mini-box-img{
 
     min-width:56.665%;
+    max-width:56.665%;
     align-items: center;
     border-radius: 2.171rem;
     background-color: aqua;
@@ -353,6 +379,228 @@ margin-top: 0.5rem;
     color: #FF4D4D;
 }
 
+
+/* More about me Section */
+.more-projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+
+.small-card .mini-box-img{
+    min-width: 100%;
+    min-height: 15.85rem;
+    max-height: 15.85rem;
+}
+.small-card .mini-box {
+    padding:4rem 0;
+}
+
+.mini-box-container:nth-child(1) {
+    margin-right: 5em;
+   }
+.mini-box-container:nth-child(2) {
+    margin-left: 5em;
+   }
+   
+
+.mini-box-container {
+    display: grid;
+    gap: 4em;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.small-card .mini-box-img .title h1 {
+    font-size: 1rem;
+  }
+  
+   .mini-box-img .title h1 {
+    margin-top: 0;
+}
+
+
+/* contact me section */
+.contact-me-bg {
+    min-height: 90vh;
+    max-height: 90vh;
+    background-color: rgba(25, 50, 66, 1);
+    /* border: 2px solid yellow; */
+}
+
+#contact {
+    position:relative;
+}
+
+.top-img, .bottom-img {
+    position:absolute;
+    z-index:0;
+}
+.top-img {
+    left: 0;
+    top: 0;
+}
+.bottom-img {
+    right:0;
+    bottom:0;
+}
+.contact-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.contact-box {
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    background-color: rgba(18, 36, 47, 1);
+    position: relative;
+    /* border: 2px solid white; */
+    min-width: 79.489%;
+    max-width: 79.489%;
+    min-height: 72.149%;
+    max-height: 72.149%;
+    z-index:1;
+}
+.contact-form {
+    /* border: 1px solid red; */
+    position:absolute;
+    width: 53%;
+    height:100%;
+    right:0;
+    border-radius: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 2;
+
+}
+.image-side {
+    /* border: 1px solid blue; */
+    position:relative;
+    height:100%;
+}
+
+.env {
+    position: absolute;
+    top: 34%;
+    right: 33%;
+}
+
+
+/* form */
+.heading {
+    margin:4rem 2rem 2rem;
+    color: #fff; 
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+.heading h3 {
+    color:rgba(255, 52, 0, 0.6);
+    font-size: 1.5rem;
+}
+form, form a {
+    margin: 2rem;
+    font-weight:200;
+    font-size: .9rem;
+    color:rgba(156, 156, 156, 1)
+}
+.input-grp {
+    margin-bottom: 3rem;
+    position: relative;
+}
+.msg {
+    margin-bottom: 1.5rem;
+}
+input, textarea {
+    width:90%;
+    max-width: 90%;
+    padding:.5rem .5rem .2rem;
+    outline: 0;
+    border: 0;
+    color:#fff;
+    background: transparent;
+    font-weight: 300;
+    font-size: .9rem;
+}
+input {
+    border-bottom: 1px solid rgba(128, 128, 128, 1);
+    max-width: 80%;
+}
+textarea {
+    border: 1px solid rgba(128, 128, 128, 1);
+    border-radius: .7rem;
+    font-size: .9rem;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    padding: .7rem;
+    transition: 200ms;
+}
+
+form a{
+    margin: 0;
+}
+.submit span {
+    font-weight: 500;
+    color: #fff;
+    margin-left: 1.5em;
+}
+
+
+.submit button{
+    text-transform:capitalize;
+    border: 0;
+    /* line-height: 1.4; */
+    padding: .2em 0.8em;
+    font-size: .9rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    border-radius: 13px;
+    background-color: #FF4D4D;  
+    width: 7em;
+    margin: 0 1.5em 0 .5em;
+
+}
+.submit button:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color: #FF4D4D;
+}
+
+input:focus~label, input:valid~label {
+    padding-left: 0.3rem;
+    top: -1.6em
+}
+textarea:focus~label, textarea:valid~label{
+    padding-left: 0.3rem;
+    top: -2.5em
+}
+
+.name-email {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+
+/* Footer */
+footer ,footer p {
+    position: relative;
+    text-align: center;
+    margin:0;
+    z-index: 3;
+}
+footer p {
+    margin: 1rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(70, 70, 70);
+
+}
 
 @media (max-width: 1400px) { 
     .nav-item {
