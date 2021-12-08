@@ -1,0 +1,75 @@
+body{
+    font-family: "Poppins";
+    margin: 0;
+}
+header {
+    height: 100vh;
+    background-color: #EAEAEA;
+}
+button {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.sub-nav-bg {
+    min-height: 5%;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+
+.styled {
+    border: 0;
+    line-height: 1.4;
+    padding: 0 0.55rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #000;
+    border-radius: 15px;
+    background-color: #FF4D4D;   
+}
+.styled:hover {
+    color: #ff4d4d;
+    background-color: #191B37;
+    cursor: pointer;
+}
+.sub-nav-container {
+    background-color: rgba(25, 50, 66, 0.3);
+}
+.nav-icons {
+    margin: 0;
+    padding: 0;
+}
+.sub-logo {
+    width:3%;
+    position: relative;
+    z-index: 1;
+}
+.sub-icon {
+    width: 70%;
+}
+
+.navbar ul li, a {
+    display:inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;;
+    text-transform: capitalize;
+
+}
+.navbar{
+    position: relative;
+    width: 80%;
+    margin:auto;
+    padding-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-item {
+    padding: 0 1.5rem;
+}
+
+.nav-icon {
+    padding: 0 0.1rem;
+}
