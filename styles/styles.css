@@ -317,9 +317,9 @@ main {
 
     min-width:56.665%;
     max-width:56.665%;
-    align-items: center;
+    /* align-items: center; */
     border-radius: 2.171rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     min-height:20.85rem;
     max-height:20.85rem;
     margin-right: 0.5rem;
@@ -327,6 +327,16 @@ main {
 
     z-index: 0;
     position: relative;
+}
+.title-sec {
+    position: relative;
+    z-index: 2;
+    max-width: 95%;
+}
+.interior-img {
+    position:absolute;
+    top: 0;
+    max-width: 96%;
 }
 
 .box-container {
@@ -337,6 +347,7 @@ main {
 }
 .mini-box-img .title{
 margin-top: 0.5rem;
+z-index: 5;
 }
 
 .full-card {
@@ -390,8 +401,16 @@ margin-top: 0.5rem;
 
 .small-card .mini-box-img{
     min-width: 100%;
+    max-width: 100%;
     min-height: 15.85rem;
     max-height: 15.85rem;
+}
+.small-card .title-sec {
+    max-width: 85%;
+    left:11px;
+}
+.small-card .title {
+    max-width: 92%;
 }
 .small-card .mini-box {
     padding:4rem 0;
