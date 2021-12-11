@@ -1,7 +1,7 @@
 body{
     font-family: "Poppins";
     margin: 0;
-    min-height: 500vh;
+    /* min-height: 500vh; */
     background-color: #EAEAEA
 }
 button {
@@ -11,11 +11,12 @@ button {
     /* transition:background color ease-in; */
 }
 header {
-    min-height: 100vh;
     background-color: #0C1B24;
 }
 section {
     min-height:100vh;
+    position: relative;
+    top: 0;
 }
 main {
     height:80vh;
@@ -36,6 +37,14 @@ main {
 }
 .sub-nav-container {
     background-color: rgba(25, 50, 66, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    display: none;
+}
+a {
+    width: 100%;
+    display: contents;
 }
 .sub-logo {
     width:3%;
@@ -45,15 +54,20 @@ main {
 .sub-icon {
     width: 70%;
 }
- .title-tag h1 {
+ .title-tag {
     margin:0;
-    margin-top: 0.5%;
-    position: relative;
+    margin-top: 4%;
+    position: fixed;
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-size: 2.2rem;
     font-weight: 900;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    display: none;
 }
+
 
 /* End of secondary NavBar  */
 
@@ -92,7 +106,7 @@ main {
     width: 95%;
 }
 
-.navbar ul li, a {
+.navbar ul li, ul a {
     display:inline-block;
     list-style-type: none;
     text-decoration: none;
@@ -101,9 +115,12 @@ main {
 }
 
 .nav-container {
-    background-color: #191B37;
-    position: relative;
-    z-index: 1;
+    background-color: rgba(25, 27, 55, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+    display: none;
 }
 
 .navbar{
@@ -113,8 +130,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top:0;
+    /* position: sticky;
+    top:0; */
 }
 
 .nav-item {
@@ -145,6 +162,11 @@ main {
 .nav-icon a:hover{
     opacity: 2;
 }
+
+
+.unset{
+    display: unset;
+}
 /* End of navbar */
 
 
@@ -161,11 +183,13 @@ main {
 
 .hero-container {
     /* border:1px solid yellow; */
+    min-height: 100vh;
     position: relative;
+    top: 0;
     z-index: 1;
     color:#fff;
     width: 80%;
-    margin:6% auto;
+    margin:0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,10 +199,12 @@ main {
 .left {
     padding-left: 6em;
     line-height:10;
+    margin-top: 10%;
 }
 .right{
     padding-right: 3em;
     line-height:10;
+    margin-top: 10%;
 }
 .left h3, .right h3 {
     text-transform: uppercase;
@@ -220,8 +246,24 @@ main {
 
 
 /* about me section*/
+
+/* min-height: 100vh;
+position: relative;
+top: 0;
+z-index: 1;
+color:#fff;
+width: 80%;
+margin:0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+line-height: 1.2; */
+
 .main-sec {
+    min-height: 100vh;
     position:relative;
+    top: 0;
     /* border:none; */
     /* border: 1px solid blue; */
     display: flex;
@@ -250,6 +292,7 @@ main {
     min-height:38.125em;
     max-height:38.125em;
     margin: 0 4em;
+    margin-top: 4%;
     z-index: 0;
     position: relative;
 }
@@ -296,9 +339,9 @@ main {
     width:103%;
     right:1.85%;
 }
-#projects .main-sec {
+/* #projects .main-sec {
     margin-top: 1em;
-} 
+}  */
 
 .box-container .title h1 {
     font-weight: 700;
@@ -343,6 +386,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6%;
 }
 .mini-box-img .title{
 margin-top: 0.5em;
@@ -424,6 +468,7 @@ z-index: 5;
    
 
 .mini-box-container {
+    margin-top: 15%;
     display: grid;
     gap: 4em;
     grid-template-columns: repeat(2, 1fr);
@@ -470,6 +515,7 @@ z-index: 5;
 
 }
 .contact-box {
+    margin-top: 15%;
     position: relative;
     display: flex;
     border-radius: 2em;
@@ -508,7 +554,7 @@ z-index: 5;
 
 /* form */
 .heading {
-    margin:4em 2em 2em;
+    margin:2em 2em 2em;
     color: #fff; 
     font-weight: 500;
     font-size: 2.25rem;
@@ -614,7 +660,7 @@ footer ,footer p {
     z-index: 3;
 }
 footer p {
-    margin: 1em;
+    margin: 2.5em;
     font-size: 0.85rem;
     font-weight: 300;
     color: rgb(70, 70, 70);

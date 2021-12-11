@@ -22,15 +22,15 @@
 
 </head>
 <body>
-    <header>
-        <img src="images/hero.png" alt="" class="hero-img">
-        <div class="nav-container">
+    <header id="home">
+        <img src="images/hero.png" alt="" class="hero-img"> <!-- possibly resize this -->
+        <div class="nav-container unset">
             <!-- <img src="images/hero.png" alt="" class="hero-img"> -->
-            <nav class="navbar">
+            <nav class="navbar"> <!-- This must have the properties for the navbar only and the position fixed without the vh propety -->
                 <img src="images/logo.svg" alt="logo" class="logo">
 
                 <ul class="nav-items">
-                    <li class="nav-item"> <a href="#">home</a> </li>
+                    <li class="nav-item"> <a href="#home">home</a> </li>
                     <li class="nav-item"> <a href="#about">about</a> </li>
                     <li class="nav-item"> <a href="#projects">projects</a> </li>
                     <li class="nav-item"> <a href="#contact">contact me</a> </li>
@@ -51,7 +51,7 @@
             </nav>
         </div>
 
-        <div class="hero-container">
+        <div class="hero-container"> <!-- This must have the properties for 100vh -->
             <div class="left">
                 <h3>i'm</h3>
                 <h1>Antony<br>Maposa</h1>
@@ -68,37 +68,40 @@
     </header>
 
 <!-- sections begin here -->
+<div class="sub-nav-container unset">
+    <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
+
+    <nav class="navbar sub-navbar">
+        <!-- <img src="images/nav/c_logo.png" alt="logo" class="sub-logo"> -->
+        <a href="#"> <img src="images/nav/c_logo.png" alt="logo" class="sub-logo"></a>
+
+        <ul class="nav-items">
+            <li class="nav-item"> <a href="#">home</a> </li>
+            <li class="nav-item"> <a href="#about">about</a> </li>
+            <li class="nav-item"> <a href="#projects">projects</a> </li>
+            <li class="nav-item"> <a href="#contact">contact me</a> </li>
+            <li class="nav-item nav-btn">
+                <button class="nav-cv styled" type="button">
+                    Download CV
+                </button> 
+            </li>
+        </ul>
+
+        <ul class="nav-icons">
+            <li class="nav-icon"> <a href="#"><img src="images/icons/youtube.svg" alt="youtube" class="sub-icon"></a> </li>
+            <li class="nav-icon"> <a href="#"><img src="images/icons/github.svg" alt="github" class="sub-icon"></a> </li>
+            <li class="nav-icon"> <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" class="sub-icon"></a> </li>
+        </ul>
+
+    </nav>
+
+</div>
+    <div >
+    <h1 class="title-tag unset">About Me</h1>
+    </div>
     <section id="about">
-        <div class="sub-nav-container">
-            <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
+        
 
-            <nav class="navbar sub-navbar">
-                <img src="images/nav/c_logo.png" alt="logo" class="sub-logo">
-
-                <ul class="nav-items">
-                    <li class="nav-item"> <a href="#">home</a> </li>
-                    <li class="nav-item"> <a href="#about">about</a> </li>
-                    <li class="nav-item"> <a href="#projects">projects</a> </li>
-                    <li class="nav-item"> <a href="#contact">contact me</a> </li>
-                    <li class="nav-item nav-btn">
-                        <button class="nav-cv styled" type="button">
-                            Download CV
-                        </button> 
-                    </li>
-                </ul>
-
-                <ul class="nav-icons">
-                    <li class="nav-icon"> <a href="#"><img src="images/icons/youtube.svg" alt="youtube" class="sub-icon"></a> </li>
-                    <li class="nav-icon"> <a href="#"><img src="images/icons/github.svg" alt="github" class="sub-icon"></a> </li>
-                    <li class="nav-icon"> <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" class="sub-icon"></a> </li>
-                </ul>
-
-            </nav>
-
-        </div>
-        <div class="title-tag">
-        <h1>About Me</h1>
-        </div>
 
         <main class="about-me main-sec">
             <div class="box-img">
@@ -159,7 +162,7 @@
 
 
     <section id="projects">
-        <div class="sub-nav-container">
+        <!-- <div class="sub-nav-container">
             <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
 
             <nav class="navbar sub-navbar">
@@ -188,7 +191,7 @@
         </div>
         <div class="title-tag">
         <h1>Projects</h1>
-        </div>
+        </div> -->
 
         <main class="my-projects main-sec">
             <div class="box-container">
@@ -319,7 +322,7 @@
 
 
     <section id="more-projects">
-        <div class="sub-nav-container">
+        <!-- <div class="sub-nav-container">
             <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
 
             <nav class="navbar sub-navbar">
@@ -348,7 +351,7 @@
         </div>
         <div class="title-tag">
         <h1>More Projects</h1>
-        </div>
+        </div> -->
 
         <main class="more-projects">
             
@@ -532,7 +535,7 @@
         <img src="images/contact/bottom.png" class="bottom-img" alt="">
         <div class="contact-me-bg">
 
-            <div class="sub-nav-container">
+            <!-- <div class="sub-nav-container">
             <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
 
             <nav class="navbar sub-navbar">
@@ -561,7 +564,7 @@
             </div>
             <div class="title-tag">
             <h1>Contact Me</h1>
-            </div>
+            </div> -->
 
             <main class="contact-me">
                     <div class="contact-box">
@@ -605,11 +608,11 @@
                     </div>
 
             </main>
-            <footer>
-                <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright 2021 AntonyCJA. All rights reserved</p> 
-            </footer>
-
+            
         </div>
+        <footer>
+            <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright 2021 AntonyCJA. All rights reserved</p> 
+        </footer>
 
         <!-- <img src="images/contact/bottom.png" class="bottom-img" alt=""> -->
     </section>
