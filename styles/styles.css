@@ -41,6 +41,7 @@ main {
     top: 0;
     z-index: 50;
     display: none;
+        transition-duration: 500ms;
 }
 a {
     width: 100%;
@@ -66,6 +67,7 @@ a {
     top: 0;
     width: 100%;
     display: none;
+    transition-duration: 500ms;
 }
 
 
@@ -120,7 +122,7 @@ a {
     width: 100%;
     top: 0;
     z-index: 4;
-    display: none;
+    transition-duration: 500ms;
 }
 
 .navbar{
@@ -164,8 +166,21 @@ a {
 }
 
 
+.fixed {
+    transition-duration: 500ms;
+    display:unset;
+}
 .unset{
-    display: unset;
+    /* position: fixed; */
+    transition-duration: 500ms;
+    display: none;
+}
+.active a, .active a:hover{
+    color: #fff;
+    background-color: rgba(25, 50, 66, 1);
+}
+.active a:active {
+    background-color:rgb(34, 68, 88);
 }
 /* End of navbar */
 
