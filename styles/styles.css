@@ -1,7 +1,10 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Poppins";
     margin: 0;
-    min-height: 500vh;
+    /* min-height: 500vh; */
     background-color: #EAEAEA
 }
 button {
@@ -10,12 +13,16 @@ button {
     transition-duration: 300ms;
     /* transition:background color ease-in; */
 }
+button:hover {
+    cursor: pointer;
+}
 header {
-    min-height: 100vh;
     background-color: #0C1B24;
 }
 section {
     min-height:100vh;
+    position: relative;
+    top: 0;
 }
 main {
     height:80vh;
@@ -27,6 +34,10 @@ main {
 
 /* secondary NavBar  */
 
+.sub-navigation {
+    display: none;
+    transition-duration: 500ms;
+}
 
 .sub-nav-bg {
     min-height: 5%;
@@ -36,6 +47,13 @@ main {
 }
 .sub-nav-container {
     background-color: rgba(25, 50, 66, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 50;
+}
+a {
+    width: 100%;
+    display: contents;
 }
 .sub-logo {
     width:3%;
@@ -45,15 +63,21 @@ main {
 .sub-icon {
     width: 70%;
 }
- .title-tag h1 {
+ .title-tag {
     margin:0;
-    margin-top: 0.5%;
-    position: relative;
+    margin-top: 4%;
+    position: fixed;
     text-align: center;
-    color:#fff;
+    color: #fff;
     font-size: 2.2rem;
     font-weight: 900;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    display: none;
+    transition-duration: 500ms;
 }
+
 
 /* End of secondary NavBar  */
 
@@ -72,7 +96,13 @@ main {
     border-radius: 15px;
     background-color: #FF4D4D;   
 }
-.nav-item button:hover{
+.navbar .nav-items {
+    display: flex;
+}
+.styled {
+    line-height: 1.6;
+}
+.nav-btn-item button:hover{
     color: #ff4d4d;
     background-color: #191B37;
 }
@@ -92,7 +122,7 @@ main {
     width: 95%;
 }
 
-.navbar ul li, a {
+.navbar ul li, ul a {
     display:inline-block;
     list-style-type: none;
     text-decoration: none;
@@ -101,9 +131,12 @@ main {
 }
 
 .nav-container {
-    background-color: #191B37;
-    position: relative;
-    z-index: 1;
+    background-color: rgba(25, 27, 55, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+    transition-duration: 500ms;
 }
 
 .navbar{
@@ -113,8 +146,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top:0;
+    /* position: sticky;
+    top:0; */
 }
 
 .nav-item {
@@ -122,6 +155,7 @@ main {
 }
 .nav-item a {
     width: 7em;
+    padding: .25rem 0;
     background: rgba(25, 50, 66, 0.3);
     text-align: center;
     border-radius: 20px;
@@ -145,6 +179,24 @@ main {
 .nav-icon a:hover{
     opacity: 2;
 }
+
+
+.fixed {
+    transition-duration: 500ms;
+    display:unset;
+}
+.unset{
+    /* position: fixed; */
+    transition-duration: 500ms;
+    display: none;
+}
+.active a, .active a:hover{
+    color: #fff;
+    background-color: rgba(25, 50, 66, 1);
+}
+.active a:active {
+    background-color:rgb(34, 68, 88);
+}
 /* End of navbar */
 
 
@@ -161,11 +213,13 @@ main {
 
 .hero-container {
     /* border:1px solid yellow; */
+    height: 100vh;
     position: relative;
+    top: 0;
     z-index: 1;
     color:#fff;
     width: 80%;
-    margin:6% auto;
+    margin:0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -175,10 +229,12 @@ main {
 .left {
     padding-left: 6em;
     line-height:10;
+    margin-top: 10%;
 }
 .right{
     padding-right: 3em;
     line-height:10;
+    margin-top: 10%;
 }
 .left h3, .right h3 {
     text-transform: uppercase;
@@ -220,8 +276,25 @@ main {
 
 
 /* about me section*/
+
+/* min-height: 100vh;
+position: relative;
+top: 0;
+z-index: 1;
+color:#fff;
+width: 80%;
+margin:0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+text-align: center;
+line-height: 1.2; */
+
 .main-sec {
+    min-height: 100vh;
+    max-height: 100vh;
     position:relative;
+    top: 0;
     /* border:none; */
     /* border: 1px solid blue; */
     display: flex;
@@ -247,9 +320,11 @@ main {
     align-items: center;
     border-radius: 3.571em;
     background-color: rgba(25, 50, 66, 0.0095); 
+    /* background-color: lightblue;  */
     min-height:38.125em;
     max-height:38.125em;
     margin: 0 4em;
+    margin-top: 4%;
     z-index: 0;
     position: relative;
 }
@@ -285,7 +360,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: .8em;
 }
 
@@ -296,9 +371,9 @@ main {
     width:103%;
     right:1.85%;
 }
-#projects .main-sec {
+/* #projects .main-sec {
     margin-top: 1em;
-} 
+}  */
 
 .box-container .title h1 {
     font-weight: 700;
@@ -343,6 +418,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 6%;
 }
 .mini-box-img .title{
 margin-top: 0.5em;
@@ -424,6 +500,7 @@ z-index: 5;
    
 
 .mini-box-container {
+    margin-top: 15%;
     display: grid;
     gap: 4em;
     grid-template-columns: repeat(2, 1fr);
@@ -470,6 +547,7 @@ z-index: 5;
 
 }
 .contact-box {
+    margin-top: 15%;
     position: relative;
     display: flex;
     border-radius: 2em;
@@ -508,7 +586,7 @@ z-index: 5;
 
 /* form */
 .heading {
-    margin:4em 2em 2em;
+    margin:2em 2em 2em;
     color: #fff; 
     font-weight: 500;
     font-size: 2.25rem;
@@ -603,6 +681,9 @@ textarea:focus~label, textarea:valid~label{
     display: flex;
     justify-content:space-between;
 }
+.sm-nav-btn-item {
+    display: none;
+}
 
 
 
@@ -614,19 +695,178 @@ footer ,footer p {
     z-index: 3;
 }
 footer p {
-    margin: 1em;
+    margin: 2.5em;
     font-size: 0.85rem;
     font-weight: 300;
     color: rgb(70, 70, 70);
 
 }
 
-@media (max-width: 1400px) { 
+@media (max-width: 1024px) {
+    .nav-item {
+        padding: 0 0.02em ;
+    }
+    .nav-icons {
+        display: none;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .nav-btn-item {
+        display: none;
+    }
+    .sm-nav-btn-item {
+        display: block;
+    }
+    .nav-items {
+        justify-content: space-between;
+    }
+    .hero-container {
+        width:90%;
+    }
+    .left h3, .right h3 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height:2;
+    
+    }
+    .left h1, .right h1 {
+        font-size: 4.3rem;
+        font-weight: 900;
+        line-height:1.2;
+        margin-bottom: 0;
+    }
+    .hero-btn {
+        font-size: 1rem;
+    }
+
+
+    
+}
+
+@media (max-width: 1440px) { 
+    main {
+        width:85%;
+    }
     .nav-item {
         padding: 0 0.5em;
     } 
     .navbar {
         width: 85%;
+        z-index: 20;
+        position: relative;
     }
     
-}
+    .sub-nav-container {
+        z-index: 25;
+    }
+    .hero-container {
+        width: 85%;
+    }
+    
+    /* header section */
+    .left h3, .right h3 {
+        line-height: 1.5;
+        margin-top: 4rem;
+    }
+    .left h1, .right h1 {
+        line-height: 1.2;
+        margin: 2rem 0 1rem 0;
+    }
+
+    /* about section */
+    .box-img {
+        margin: 15% 1em 3em; 
+        /* background-color: limegreen; */
+        min-height: 30rem;
+        max-height: 30rem;
+
+    }
+    .title-tag {
+        margin-top: 4.5%;
+        font-size: 2rem;
+    }
+    .box-img img {
+        width: 95%;
+    }
+    .box p {
+        margin: 0;
+    }
+    .box, .box p {
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+    .title h1 {
+        margin: 0;
+        font-size: 1.85rem;
+    }
+
+
+    /* projects */
+    .box-container {
+        margin-top: 4%;
+    }
+    .full-card {
+        max-height: 15em;
+        margin: 2em 3em 0 1.5em;
+    }
+    .description {
+        margin: .05em 0;
+    }
+    .text {
+        line-height: 1;
+    }
+    .text {
+        font-style: normal;
+        font-size: .925rem;
+        font-weight:300;
+        line-height: 1.15;
+        text-align: left;
+    }
+    .mini-box-img {
+        min-height: 15em;
+        max-height: 15em;
+    }
+    .text p {
+        margin-top: .2em;
+        margin-bottom: .5em;
+    }
+    .mini-box-img .title {
+        margin-top: .2em;
+    }
+
+
+    /* contact page */
+    .top-img, .bottom-img {
+        width: 40%;
+    }
+    .c-bg {
+        width: 72%;
+        height: 100%;
+    }
+    .env {
+        right: 45%;
+    }
+    .heading {
+        margin: .7em;
+        margin-bottom: .3em;
+        font-size: 2rem;
+    }
+    .heading h1 {
+        margin-top: .8em;
+        margin-bottom: .1em;
+    }
+    .heading h3 {
+        margin-top: 0;
+        margin-bottom: .3em;
+    }
+    form {
+        margin-top: 1.3em;
+    }
+    
+    footer p {
+        margin: 2em;
+    }
+    
+        
+    }
