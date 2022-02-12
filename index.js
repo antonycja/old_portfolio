@@ -1,5 +1,8 @@
 const header = document.querySelector('header nav');
 const subNav = document.querySelector('.sub-navigation');
+const activeAbout = document.querySelector('.sub-navbar .nav-items .about');
+const activeProjects = document.querySelector('.sub-navbar .nav-items .projects');
+const activeContact = document.querySelector('.sub-navbar .nav-items .contact');
 const about = document.querySelector('.sub-navigation .about-tag h1');
 const projects = document.querySelector('.sub-navigation .projects-tag h1');
 const moreProjects = document.querySelector('.sub-navigation .more-projects-tag h1');
@@ -24,11 +27,9 @@ const HeaderObserver = new IntersectionObserver (
             if (!entry.isIntersecting) {
                 header.classList.add('unset');
                 subNav.classList.add('fixed');
-                // about.classList.add('fixed');
             } else {
                 header.classList.remove('unset');
                 subNav.classList.remove('fixed');
-                // about.classList.remove('fixed');
             }
         });
     },
@@ -41,8 +42,10 @@ const aboutObserver = new IntersectionObserver (
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 about.classList.add('fixed');
+                activeAbout.classList.add('active');
             } else {
                 about.classList.remove('fixed');
+                activeAbout.classList.remove('active');
             }
         });
     },
@@ -54,8 +57,10 @@ const projectsObserver = new IntersectionObserver (
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 projects.classList.add('fixed');
+                activeProjects.classList.add('active');
             } else {
                 projects.classList.remove('fixed');
+                activeProjects.classList.remove('active');
             }
         });
     },
@@ -67,8 +72,10 @@ const moreProjectsObserver = new IntersectionObserver (
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 moreProjects.classList.add('fixed');
+                activeProjects.classList.add('active');
             } else {
                 moreProjects.classList.remove('fixed');
+                activeProjects.classList.remove('active');
             }
         });
     },
@@ -80,8 +87,10 @@ const contactObserver = new IntersectionObserver (
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 contact.classList.add('fixed');
+                activeContact.classList.add('active');
             } else {
                 contact.classList.remove('fixed');
+                activeContact.classList.remove('active');
             }
         });
     },
