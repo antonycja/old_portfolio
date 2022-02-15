@@ -20,15 +20,13 @@
       <!-- font awesome -->
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 
-    <!-- Javascript -->
-
 </head>
 <body>
+    <!-- Header Starts here -->
     <header id="home">
         <img src="images/hero.png" alt="" class="hero-img"> <!-- possibly resize this -->
         <nav class="nav-container">
-            <!-- <img src="images/hero.png" alt="" class="hero-img"> -->
-            <div class="navbar "> <!-- This must have the properties for the navbar only and the position fixed without the vh propety -->
+            <div class="navbar ">
                 <img src="images/logo.svg" alt="logo" class="logo">
 
                 <ul class="nav-items">
@@ -39,6 +37,7 @@
                         <li class="nav-item"> <a href="#contact">contact me</a> </li>
                         <li class="nav-item nav-btn"> </li>
                     </div>
+                    <!-- TODO: change buttons from links to full functioning buttons -->
                     <div class="nav-btn-item">
                         <button class="nav-cv styled" type="button">
                             Download CV
@@ -65,19 +64,18 @@
             <div class="left">
                 <h3>i'm</h3>
                 <h1>Antony<br>Maposa</h1>
-                <button class="more hero-btn">More About Me</button>
+                <a href="#about"><button class="more hero-btn">More About Me</button></a>
             </div>
-            <!-- <div><span></span></div> -->
             <div class="right">
                 <h3>a</h3>
                 <h1>Software<br>Developer</h1>
-                <button class="projects hero-btn">My Projects</button>
+                <a href="#projects"> <button class="projects hero-btn">My Projects</button></a>
             </div>
         </div>
 
     </header>
 
-<!-- sections begin here -->
+<!-- Secondary navbar starts here -->
 <div class="sub-navigation">
 <nav class="sub-nav-container ">
     <img src="images/nav/Vector 3.png" class="sub-nav-bg" alt="">
@@ -99,9 +97,9 @@
         </ul>
 
         <ul class="nav-icons">
-            <li class="nav-icon"> <a href="#"><img src="images/icons/youtube.svg" alt="youtube" class="sub-icon"></a> </li>
-            <li class="nav-icon"> <a href="#"><img src="images/icons/github.svg" alt="github" class="sub-icon"></a> </li>
-            <li class="nav-icon"> <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" class="sub-icon"></a> </li>
+            <li class="nav-icon"> <a href="https://www.youtube.com/c/Antonycja" target="_blank"><img src="images/icons/youtube.svg" alt="youtube" class="sub-icon"></a> </li>
+            <li class="nav-icon"> <a href="https://github.com/antonycja" target="_blank"><img src="images/icons/github.svg" alt="github" class="sub-icon"></a> </li>
+            <li class="nav-icon"> <a href="https://www.linkedin.com/in/antony-maposa/" target="_blank"><img src="images/icons/linkedin.svg" alt="linkedin" class="sub-icon"></a> </li>
         </ul>
 
     </div>
@@ -125,6 +123,9 @@
     </div>
 
 </div>
+<!-- Secondary Navbar ends here -->
+
+<!-- About Section starts here -->
     <section id="about">
         
 
@@ -184,14 +185,10 @@
         </main>
 
     </section>
+<!-- About section Ends Here -->
 
-
-
+<!-- Projects Section starts here -->
     <section id="projects">
-
-        <!-- <div class="title-tag">
-        <h1>Projects</h1>
-        </div> -->
 
         <main class="my-projects main-sec">
             <div class="box-container">
@@ -318,16 +315,10 @@
         </main>
 
     </section>
+<!-- Projects Section Ends here -->
 
-
-
+<!-- More-Projects Section starts here -->
     <section id="more-projects">
-
-        <!-- </div>
-        <div class="title-tag">
-        <h1>More Projects</h1>
-        </div> -->
-
         <main class="more-projects">
             
             <div class="mini-box-container">
@@ -501,19 +492,13 @@
         </main>
 
     </section>
+<!-- More-Projects Section Ends here -->
 
-
-
-
+<!-- Contact Section starts here -->
     <section id="contact">
         <img src="images/contact/top.png" class="top-img" alt="">
         <img src="images/contact/bottom.png" class="bottom-img" alt="">
         <div class="contact-me-bg">
-
-           
-            <!-- <div class="title-tag">
-            <h1>Contact Me</h1>
-            </div> -->
 
             <main class="contact-me">
                     <div class="contact-box">
@@ -559,25 +544,12 @@
             </main>
             
         </div>
+        <!-- TODO: Automate the year with javascript -->
         <footer>
-            <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright 2021 AntonyCJA. All rights reserved</p> 
+            <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright 2022 AntonyCJA. All rights reserved</p> 
         </footer>
-
-        <!-- <img src="images/contact/bottom.png" class="bottom-img" alt=""> -->
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Contact Section Ends here -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
