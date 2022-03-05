@@ -500,20 +500,30 @@
         <img src="images/contact/bottom.png" class="bottom-img" alt="">
         <div class="contact-me-bg">
 
+            <div class="success">  
+                <lottie-player class="success-animation" src="https://assets3.lottiefiles.com/packages/lf20_vqpiawzv.json"  background="transparent"  speed="0.5"  style="width: 600px; height: 600px;" ></lottie-player>
+                <h1 class="env-text">sent</h1>
+            </div>
             <main class="contact-me">
+
                     <div class="contact-box">
                         <div class="image-side">
-                            <img src="images/contact/envelope.svg" class="env" alt="">
+                            <div class="env">
+                                <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_cbc2dy5y.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+
+                            </div>
+                            
+                            <!-- <img src="images/contact/envelope.svg" class="env" alt=""> -->
                             <img src="images/contact/contact-bg.png" class="c-bg"alt="">
 
                         </div>
-                        <div class="contact-form">
-                            <div class="heading">
+                        <div class="contact-form ">
+                            <div class="heading seq">
                                 <h1>Like what you see?</h1>
                                 <h3>Let's talk.</h3>
                             </div>
                             <form action="">
-                                <div class="name-email">
+                                <div class="name-email seq">
                                     <div class="input-grp">
                                         <input type="text" id="name" required>
                                         <label for="name">Full Name</label>
@@ -524,14 +534,15 @@
                                     </div>
                                 </div>
                                 
-                                <div class="input-grp msg">
+                                <div class="input-grp msg seq">
                                     <textarea id="message" rows="4" required></textarea>
                                     <label for="message">Message...</label>
                                 </div>
-                                <div class="submit">
+                                <div class="submit seq">
                                     <p>
-                                        <button type="submit">Submit</button> or <span>Email me: </span> <a href="mailto:cjamaposa@gmail.com">cjamaposa@gmail.com</a>
+                                        <button class="send" type="submit">Submit</button> or <span>Email me: </span> <a href="mailto:cjamaposa@gmail.com">cjamaposa@gmail.com</a>
                                     </p>
+                                
                                     
                                 </div>
 
@@ -544,13 +555,18 @@
             </main>
             
         </div>
-        <!-- TODO: Automate the year with javascript -->
+
+
+
         <footer>
-            <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright 2022 AntonyCJA. All rights reserved</p> 
+            <p><span class="copyright iconify" data-icon="fa-regular:copyright" data-width="20"></span>  Copyright <span id="footer-year">2020</span> AntonyCJA. All rights reserved</p> 
         </footer>
     </section>
 <!-- Contact Section Ends here -->
-
+    <!-- Lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
