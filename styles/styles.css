@@ -651,14 +651,14 @@ label{
 form a{
     margin: 0;
 }
-.submit span {
+.submit-btn span {
     font-weight: 500;
     color: #fff;
     margin-left: 1.5em;
 }
 
 
-.submit button{
+.submit-btn button{
     text-transform:capitalize;
     border: 0px solid;
     /* line-height: 1.4; */
@@ -672,7 +672,7 @@ form a{
     margin: 0 1.5em 0 .5em;
 
 }
-.submit button:hover{
+.submit-btn button:hover{
     background-color: rgba(0, 0, 0, 0);
     /* border:.1px solid #ff4d4d; */
     color: #FF4D4D;

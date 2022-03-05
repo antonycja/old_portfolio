@@ -100,20 +100,21 @@ const contactObserver = new IntersectionObserver (
     // Footer year Automated
     document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 
-    let timeline = new gsap.timeline({defaults: {ease: Circ.easeOut }});
-    const player = document.querySelector(".success-animation");
-    let send = document.querySelector(".send");
-    timeline.paused(true);
-    timeline.to(".seq", {y: 40, opacity: 0, stagger: .05})
-    timeline.to(".contact-box", {opacity: 0},  "-=.4")
-    timeline.to(".env-text", { opacity: 1, duration: 5, y: 30}, "+=5")
-
-    send.addEventListener("click", () => {
-        timeline.play()
-        setTimeout(() => {
-        player.play()
-        }, 800)
-    });
+    // let timeline = new gsap.timeline({defaults: {ease: Circ.easeOut }});
+    // const player = document.querySelector(".success-animation");
+    // let send = document.querySelector(".send");
+    // timeline.paused(true);
+    // timeline.to(".seq", {y: 40, opacity: 0, stagger: .05})
+    // timeline.to(".contact-box", {opacity: 0},  "-=.4")
+    // timeline.to(".env-text", { opacity: 1, duration: 5, y: 30}, "+=5")
+    
+    
+    // send.addEventListener("click", () => {
+    //     timeline.play()
+    //     setTimeout(() => {
+    //     player.play()
+    //     }, 800)
+    // });
 
 
 
