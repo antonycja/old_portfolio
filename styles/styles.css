@@ -51,6 +51,9 @@ main {
     top: 0;
     z-index: 50;
 }
+.mobile-cv-btn {
+    display: none;
+}
 a {
     width: 100%;
     display: contents;
@@ -987,7 +990,7 @@ footer p {
         .more-projects{
             flex-direction: column;
         }
-        
+
     }
     
     @media (max-width: 970px) {
@@ -1013,6 +1016,36 @@ footer p {
     }
 
     @media (max-width: 850px) {
+
+        .sub-navbar .nav-items {
+            display: none;
+        }
+        .sub-navbar .hamburger .iconify{
+            color: rgb(255, 255, 255);
+            font-size: 2rem;
+        }
+        .sub-nav-container {
+            background-color: rgba(25, 50, 66, 0.8);
+        }
+        .mobile-cv-btn {
+            display: block;
+        }
+        .mobile-cv-btn {
+            display: block;
+            text-transform:capitalize;
+            border: 0;
+            line-height: 1.4;
+            padding: 0 0.55em;
+            font-size: .9rem;
+            text-align: center;
+            color: #000;
+            border-radius: 15px;
+            background-color: #FF4D4D;   
+        }
+        .title-tag {
+            font-size: 1.2rem;
+            margin-top: 5%;
+        }
 
         .nav-link-item {
             display: none;
