@@ -20,12 +20,12 @@ header {
     background-color: #0C1B24;
 }
 section {
-    min-height:100vh;
+    /* min-height:100vh; */
     position: relative;
     top: 0;
 }
 main {
-    height:80vh;
+    /* height:80vh; */
     width: 80%;
     margin: auto;
     /* border: 3px solid red; */
@@ -113,7 +113,6 @@ a {
 
 
 .nav-icons {
-    margin: 0;
     padding: 0;
 }
 
@@ -279,6 +278,7 @@ a {
 
 /* about me section*/
 
+
 .main-sec {
     min-height: 100vh;
     max-height: 100vh;
@@ -355,6 +355,18 @@ a {
 
 
 /* Projects section*/
+
+.my-projects {
+    min-height: 100vh;
+    max-height: 100vh;
+    position:relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .mini-box-img img {
     position: relative;
     width:103%;
@@ -717,13 +729,13 @@ footer p {
 
 @media (max-width: 1440px) { 
     main {
-        width:85%;
+        width:90%;
     }
     .nav-item {
         padding: 0 0.5em;
     } 
     .navbar {
-        width: 85%;
+        width: 90%;
         z-index: 20;
         position: relative;
     }
@@ -731,8 +743,9 @@ footer p {
     .sub-nav-container {
         z-index: 25;
     }
+
     .hero-container {
-        width: 85%;
+        width: 90%;
     }
     
     /* header section */
@@ -741,21 +754,27 @@ footer p {
         margin-top: 4rem;
     }
     .left h1, .right h1 {
+        font-size: 5rem;
         line-height: 1.2;
-        margin: 2rem 0 1rem 0;
+        margin: 2rem 0 1rem 0;  
+    }
+
+    .hero-btn{
+        height: 2.5em;
+        width: 9.8em;
+        font-size: 1.1rem;  
     }
 
     /* about section */
     .box-img {
-        margin: 15% 1em 3em; 
-        /* background-color: limegreen; */
+        margin: 10% 1em 3em; 
         min-height: 30rem;
         max-height: 30rem;
 
     }
     .title-tag {
         margin-top: 4.5%;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .box-img img {
         width: 95%;
@@ -764,18 +783,18 @@ footer p {
         margin: 0;
     }
     .box, .box p {
-        margin-bottom: 0;
-        line-height: 1.5;
+        margin: 0.3em 1em;
+        line-height: 1.3;
     }
     .title h1 {
         margin: 0;
-        font-size: 1.85rem;
+        font-size: 1.65rem;
     }
 
 
     /* projects */
     .box-container {
-        margin-top: 4%;
+        margin-top: 3%;
     }
     .full-card {
         max-height: 15em;
@@ -789,9 +808,9 @@ footer p {
     }
     .text {
         font-style: normal;
-        font-size: .925rem;
+        font-size: .825rem;
         font-weight:300;
-        line-height: 1.15;
+        line-height: 1.10;
         text-align: left;
     }
     .mini-box-img {
@@ -802,9 +821,22 @@ footer p {
         margin-top: .2em;
         margin-bottom: .5em;
     }
+    .small-card .mini-box-img .title h1 {
+        font-size: .9rem;
+      }
     .mini-box-img .title {
         margin-top: .2em;
     }
+    .mini-box-container:nth-child(1) {
+        margin-right: 3em;
+    }
+    .mini-box-container:nth-child(2) {
+        margin-left: 3em;
+    }
+    .mini-box-container {
+        gap:2em;
+    }
+
 
 
     /* contact page */
@@ -821,15 +853,15 @@ footer p {
     .heading {
         margin: .7em;
         margin-bottom: .3em;
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .heading h1 {
-        margin-top: .8em;
+        margin-top: .7em;
         margin-bottom: .1em;
     }
     .heading h3 {
         margin-top: 0;
-        margin-bottom: .3em;
+        margin-bottom: .2em;
     }
 
 
@@ -855,6 +887,27 @@ footer p {
         left: 30%;
     }
 
+    .msg {
+        margin-bottom: 1.3em;
+    }
+    .send {
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        margin-right: .5em;
+        margin-left: 0.2em;
+       }
+       .submit-btn span {
+           margin-left: .5em;
+       }
+    .submit-btn button {
+        margin-left: .2em;
+        margin-right: .5em;
+       }
+       
+
+    form, form a {
+        font-size: .88rem;
+    }
     form {
         margin-top: 1.3em;
     }
@@ -902,6 +955,38 @@ footer p {
         .hero-btn {
             font-size: 1rem;
         }
+        .about-me .iconify {
+            font-size: 2.5rem;
+        }
+        .box {
+            font-size: 1rem;
+        }
+        .my-projects {
+            max-height: none;
+            flex-direction: column;   
+        }
+        .full-card {
+            max-height:none;
+            margin: 2em 3em 2em 1.5em;
+        }
+        .description {
+            min-width: none;
+            max-width: none;
+        }
+        .mini-box-img {
+            max-width: none;
+            min-width: 46.665%;
+        }
+        .text {
+            font-size:1.2rem;
+        }
+        .text p {
+            margin-top:1.5em;
+        }
+
+        .more-projects{
+            flex-direction: column;
+        }
         
     }
     
@@ -920,6 +1005,11 @@ footer p {
        .hero-img {
            height: 90%;
        } 
+       .about-me .iconify {
+        font-size: 2.5rem;
+    }
+
+
     }
 
     @media (max-width: 850px) {
