@@ -801,7 +801,7 @@ footer p {
     }
     .full-card {
         max-height: 15em;
-        margin: 2em 3em 0 1.5em;
+        margin: 2em 3em 1em 1.5em;
     }
     .description {
         margin: .05em 0;
@@ -838,6 +838,10 @@ footer p {
     }
     .mini-box-container {
         gap:2em;
+        margin-top: 5%;
+    }
+    .more-projects {
+        padding: 0 2em;
     }
 
 
@@ -1011,6 +1015,10 @@ footer p {
        .about-me .iconify {
         font-size: 2.5rem;
     }
+    .text p {
+        margin-top:.5em;
+    }
+    
 
 
     }
@@ -1090,10 +1098,58 @@ footer p {
            height: 95%;
            display:none;
        } 
+   
+    .text {
+        font-size:1.1rem;
+    }
+    .text p {
+        margin-top:.5em;
+    }
+    .description {
+        height: 0;
+    }
+ }
+    @media (max-width: 780px) {
+        .text {
+            font-size:1rem;
+        }
+        .text p {
+            margin-top:.25em;
+        } 
+        .full-card {
+            margin-top: .5em;
+          }
+    }
+
+    @media (max-width: 710px) {
+        .text {
+            font-size:.85rem;
+        }
+        .text p {
+            margin-top:.15em;
+        } 
+        .full-card {
+            margin-top: 0;
+            margin-bottom: .5em;
+          }
     }
 
     
-    @media (max-width: 425px) {
+    @media (max-width: 620px) {
+        .text {
+            font-size:.85rem;
+        }
+        .text p {
+            margin-top:.15em;
+        } 
+        .full-card {
+            flex-direction: column;
+            
+          }
+    }
+
+
+    @media (max-width: 490px) {
         .hamburger .iconify {
             font-size: 1.5rem;
         }
@@ -1107,5 +1163,8 @@ footer p {
         .left h1, .right h1 {
             font-size: 2.5rem;
             line-height:1.2;
+        }
+        .main-sec {
+            flex-direction: column;
         }
     }
